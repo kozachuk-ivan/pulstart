@@ -79,6 +79,7 @@ a:hover {
   border-color: #F14814;
 }
 .btn--sm:hover {
+  color: #fff;
   border-color: #fff;
   background-color: #3F3B3D;
 }
