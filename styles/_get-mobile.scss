@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+    .get {
+
+        &__wrap {
+            margin: -10px;
+        }
+
+        &__desc {
+            font-size: 18px;
+            margin: 0 10px 10px;
+        }
+
+        &__box {
+
+            &-wrap {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 586px) {
+    .get {
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__col {
+            flex: 1 1 100%;
+
+            &:last-child {
+                padding: 15px 0;
+            }
+        }
+
+        &__wrap {
+            flex-direction: column;
+        }
+
+
+        &__box {
+
+            &-wrap {
+                padding: 25px 10px;
+            }
+        }
+    }
+}

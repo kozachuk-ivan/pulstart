@@ -1,0 +1,91 @@
+.header {
+    padding: 20px 0 10px 0;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__col {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    &__logo {
+
+        &-img {
+            width: 80px;
+            height: 24px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        margin-right: 20px;
+    }
+
+    &__link {
+        font-size: 14px;
+        display: block;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            height: 1px;
+            width: 0px;
+            background-color: black;
+            transition: .3s;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        margin-right: 12px;
+
+        &-menu {
+            display: none;
+        }
+    }
+
+    &__shop {
+        background-color: #F8F9FA;
+        padding: 12px 11px 11px;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &-wrapper {
+            display: flex;
+            align-items: center;   
+        }
+
+        &-row:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &-icon {
+            display: block;
+            width: 17px;
+            height: 17px;
+            transition: .3s;
+    
+        }
+    }
+
+
+}

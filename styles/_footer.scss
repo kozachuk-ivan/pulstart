@@ -1,0 +1,156 @@
+.footer {
+    margin-top: 32px;
+    background-color: #3F3B3D;
+
+    &__wrapper {
+        padding: 96px 0 34px 0;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 29px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        max-width: 350px;
+        margin-bottom: 32px;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    &__col {
+        flex: 1 1 25%;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &-wrap {
+            position: relative;
+            padding-bottom: 100%;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__box {
+
+        &:last-child {
+            display: flex;
+        }
+
+        &-row {
+            flex: 1 1 51.25%;
+        
+            &-one {
+                position: relative;
+                margin-right: 10px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../images/footer/line.svg);
+                    padding-top: 0.305%;
+                    width: 78.05%;
+                    top: 84.81%;
+                    left: 0;    
+                }
+            }
+
+            &:last-child {
+                flex: 1 0 48.75%;
+            }
+        }       
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        max-width: 440px;
+
+        &-link {
+            color: #fff;
+        }
+    }
+
+    &__list {
+
+        &-row {
+            flex: 1 1 33.333%;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-item {
+            margin-bottom: 3px;
+
+            &:first-child {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-link {
+            color: #fff;
+            line-height: 0;
+
+            &:hover {
+                color: #F14814;
+            }
+        }
+    }
+
+    &__item {
+
+        flex: 1 1 51.25%;
+
+        &:last-child {
+            flex: 0 0 48.75%;
+        }
+
+        &-row {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url(../images/footer/line-brown.svg);
+                width: 100%;
+                padding-top: 0.35%;
+                top: -60.37%;
+                left: 0;
+            }
+
+        }
+
+        &-card {
+            display: flex;
+        }
+    }
+
+    &__pulstar {
+        color: #fff;
+        margin-right: 17px;
+    }
+
+    &__powered {
+        color: #F14814;
+    }
+
+    &__btn {
+        margin-left: 54.81%;
+    }
+}

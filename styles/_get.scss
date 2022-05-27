@@ -1,0 +1,110 @@
+.get {
+    margin: 32px 0 32px 0;
+    @include bgstyles('../images/get/bgc.png');
+
+    &__wrapper {
+        align-content: center;
+        padding: 128px 0 61px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 31px;
+        text-transform: uppercase;
+        font-size: 29px;
+        line-height: 1.21;
+    }
+
+    &__row {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    &__col {
+        flex: 0 1 40.92%;
+
+        &:last-child {
+            @include bgstyles('../images/get/col-2-bgc.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &-wrap {
+            position: relative;
+            padding-bottom: 100%;
+        }
+        
+    }
+
+    &__desc {
+        font-size: 24px;
+        text-align: center;
+        max-width: 408px;
+        margin: 0 10px 29px;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    &__wrap {
+        display: flex;
+        margin: -32px;
+    }
+
+    &__box {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-wrap {
+            flex: 1 1 25%;
+            padding: 32px;
+        }
+    }
+
+    &__link {
+        line-height: 0;
+        display: block;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+            
+    &__icon {
+
+        width: 128px;
+        height: 32px;
+
+        &-change {
+            width: 89px;
+            height: 32px;
+        }
+
+        &-wrap {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__comment {
+        text-align: center;
+        max-width: 231px;
+
+    }
+}
