@@ -61,6 +61,7 @@ a:hover {
 }
 .btn:hover {
   background-color: #F14814;
+  color: #fff;
 }
 .btn--lg {
   color: #fff;
